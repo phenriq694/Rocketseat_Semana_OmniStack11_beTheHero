@@ -1,4 +1,6 @@
 const express = require('express');
+const crypto = require('crypto');
+const connection = require('./database/connection');
 
 const routes = express.Router();
 
@@ -22,15 +24,25 @@ const routes = express.Router();
    * Route Params: Parâmetros utilizados para identificar recursos;
    * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos;
    */
-  routes.post('/users', (request, response) => {
-    const body = request.body
-  
-    console.log(body);
-  
-    return response.json({
-      evento: 'Semana Omnistack 11.0',
-      aluno: 'Diego Fernandes'
-    });
-  });
 
-  module.exports = routes;
+routes.get('/ongs', async (request, response) => {
+  const ongs = await connection('ongs').select('*');
+
+  return response.json(ongs);
+});
+
+routes.post('/ongs', async (request, response) => {
+  const { name, email, whatsapp, city, uf } = request.body;
+
+  const id = crypto.randomBytes(4).toString('HEX');
+
+  await connection('ongs').insert({
+    id, name, email, whatsapp, city, uf,
+  })
+  
+  return response.json({ id });
+});
+
+module.exports = routes;
+
+  
