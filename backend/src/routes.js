@@ -1,8 +1,9 @@
 const express = require('express');
-const crypto = require('crypto');
-const connection = require('./database/connection');
 
 const routes = express.Router();
+
+const OngController = require('./controllers/OngController');
+const IncidentController = require('./controllers/IncidentController');
 
 /**
  * Rota / Recurso
@@ -25,23 +26,10 @@ const routes = express.Router();
    * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos;
    */
 
-routes.get('/ongs', async (request, response) => {
-  const ongs = await connection('ongs').select('*');
+routes.get('/ongs', OngController.index);
+routes.post('/ongs', OngController.store);
 
-  return response.json(ongs);
-});
-
-routes.post('/ongs', async (request, response) => {
-  const { name, email, whatsapp, city, uf } = request.body;
-
-  const id = crypto.randomBytes(4).toString('HEX');
-
-  await connection('ongs').insert({
-    id, name, email, whatsapp, city, uf,
-  })
-  
-  return response.json({ id });
-});
+routes.post('/incidents', IncidentController.store);
 
 module.exports = routes;
 
