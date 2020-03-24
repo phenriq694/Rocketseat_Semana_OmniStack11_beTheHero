@@ -7,3 +7,12 @@
 <h2 align="center">
   Be The Hero API
 </h2>
+
+## Bibliotecas:
+- knex;
+
+## Database:
+- SQLite;
+
+## Ferramentas:
+- Insomnia;
