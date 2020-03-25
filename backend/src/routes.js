@@ -5,6 +5,8 @@ const routes = express.Router();
 const OngController = require('./controllers/OngController');
 const IncidentController = require('./controllers/IncidentController');
 const ProfileController = require('./controllers/ProfileController');
+const SessionController = require('./controllers/SessionController');
+
 
 /**
  * Rota / Recurso
@@ -27,13 +29,15 @@ const ProfileController = require('./controllers/ProfileController');
    * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos;
    */
 
+routes.post('/', SessionController.create)
+
 routes.get('/ongs', OngController.index);
-routes.post('/ongs', OngController.store);
+routes.post('/ongs', OngController.create);
 
 routes.get('/profile', ProfileController.index);
 
 routes.get('/incidents', IncidentController.index);
-routes.post('/incidents', IncidentController.store);
+routes.post('/incidents', IncidentController.create);
 routes.delete('/incidents/:incident_id', IncidentController.delete)
 
 module.exports = routes;
