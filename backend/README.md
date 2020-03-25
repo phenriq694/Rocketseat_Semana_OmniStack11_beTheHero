@@ -8,8 +8,15 @@
   Be The Hero API
 </h2>
 
+Para iniciar a aplicação:
+```
+yarn start
+```
+
 ## Bibliotecas:
 - knex;
+- cors;
+- nodemon;
 
 ## Database:
 - SQLite;
