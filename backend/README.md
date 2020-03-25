@@ -12,6 +12,65 @@ Para iniciar a aplicação:
 ```
 yarn start
 ```
+## Rotas:
+Para criar um sessão na aplicação:
+```
+POST '/' 
+
+Request Body
+{
+  "id": ""
+}
+```
+Para listar todas as ONGs:
+```
+GET '/ongs'
+```
+Para cadastrar uma ONG:
+```
+POST '/ongs' 
+
+Request Body
+{
+	"name": "",
+	"email": "",
+	"whatsapp": "",
+	"city": "",
+	"uf": ""
+}
+```
+Para listar os casos cadastradas por uma determinada ONG:
+```
+GET '/profile'
+
+Request Header
+Authorization = ong_id
+```
+Para listar todos os casos:
+```
+GET '/incidents'
+```
+Para cadastrar um caso:
+```
+POST '/incidents' 
+
+Request Body
+{
+	"title": "",
+	"description": "",
+	"value": 
+}
+
+Request Header
+Authorization = ong_id
+```
+Para deletar um caso:
+```
+DELETE 'incidents/:incident_id'
+
+Request Header
+Authorization = ong_id
+```
 
 ## Bibliotecas:
 - knex;
