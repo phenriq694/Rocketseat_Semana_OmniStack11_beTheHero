@@ -4,6 +4,7 @@ const routes = express.Router();
 
 const OngController = require('./controllers/OngController');
 const IncidentController = require('./controllers/IncidentController');
+const ProfileController = require('./controllers/ProfileController');
 
 /**
  * Rota / Recurso
@@ -28,6 +29,8 @@ const IncidentController = require('./controllers/IncidentController');
 
 routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.store);
+
+routes.get('/profile', ProfileController.index);
 
 routes.get('/incidents', IncidentController.index);
 routes.post('/incidents', IncidentController.store);
