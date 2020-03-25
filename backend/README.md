@@ -12,6 +12,10 @@ Para iniciar a aplicação:
 ```
 yarn start
 ```
+Aplicar as migrations:
+```
+yarn knex migrate:latest
+```
 ## Rotas:
 Para criar um sessão na aplicação:
 ```
