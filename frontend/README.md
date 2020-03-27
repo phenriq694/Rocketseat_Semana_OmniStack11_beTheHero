@@ -17,10 +17,10 @@
 
 ### Design das Páginas
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/54601930/77370169-16bbe000-6d3f-11ea-8719-3a9732d93886.png" width="500">
-  <img src="https://user-images.githubusercontent.com/54601930/77370210-2c310a00-6d3f-11ea-9f91-1d69370910f1.png" width="500">
-  <img src="https://user-images.githubusercontent.com/54601930/77370241-3e12ad00-6d3f-11ea-8994-0e36c3a9613a.png" width="500">
-  <img src="https://user-images.githubusercontent.com/54601930/77370302-57b3f480-6d3f-11ea-87a9-685f5bb9debe.png" width="500">
+  <img src="https://user-images.githubusercontent.com/54601930/77370169-16bbe000-6d3f-11ea-8719-3a9732d93886.png" width="400">
+  <img src="https://user-images.githubusercontent.com/54601930/77370210-2c310a00-6d3f-11ea-9f91-1d69370910f1.png" width="400">
+  <img src="https://user-images.githubusercontent.com/54601930/77370241-3e12ad00-6d3f-11ea-8994-0e36c3a9613a.png" width="400">
+  <img src="https://user-images.githubusercontent.com/54601930/77370302-57b3f480-6d3f-11ea-87a9-685f5bb9debe.png" width="400" height="200">
 </p>
 
 ## Bibliotecas:
