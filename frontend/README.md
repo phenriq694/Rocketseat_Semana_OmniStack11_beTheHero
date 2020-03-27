@@ -25,6 +25,7 @@
 
 ## Bibliotecas:
 - react-icons;
+- axios;
 
 ## Outros Serviços:
 - Material Icons;
