@@ -82,6 +82,8 @@ Authorization = ong_id
 - nodemon;
 - celebrate;
 - jest;
+- cross-env;
+- super-test;
 
 ## Database:
 - SQLite;
