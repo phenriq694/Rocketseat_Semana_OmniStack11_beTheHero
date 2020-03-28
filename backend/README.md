@@ -81,6 +81,7 @@ Authorization = ong_id
 - cors;
 - nodemon;
 - celebrate;
+- jest;
 
 ## Database:
 - SQLite;
