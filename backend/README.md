@@ -80,6 +80,7 @@ Authorization = ong_id
 - knex;
 - cors;
 - nodemon;
+- celebrate;
 
 ## Database:
 - SQLite;
