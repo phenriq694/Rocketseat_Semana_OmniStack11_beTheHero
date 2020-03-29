@@ -10,11 +10,18 @@ module.exports = {
       .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
       .limit(5)
       .offset((page - 1) * 5)
-      .select(['incidents.*', 'ongs.name', 'ongs.email', 'ongs.whatsapp', 'ongs.city', 'ongs.uf']);
+      .select([
+        'incidents.*',
+        'ongs.name',
+        'ongs.email',
+        'ongs.whatsapp',
+        'ongs.city',
+        'ongs.uf',
+      ]);
 
     res.header('X-Total-Count', count['count(*)']);
 
-    return res.json(incidents)
+    return res.json(incidents);
   },
 
   async create(req, res) {
@@ -24,9 +31,9 @@ module.exports = {
     const [id] = await connection('incidents').insert({
       title,
       description,
-      value, 
+      value,
       ong_id,
-    })
+    });
 
     return res.json({ id });
   },
@@ -40,12 +47,14 @@ module.exports = {
       .select('ong_id')
       .first();
 
-      if (incident.ong_id !== ong_id) {
-        return res.status(401).json({ error: 'Operation not permitted.' });
-      }
+    if (incident.ong_id !== ong_id) {
+      return res.status(401).json({ error: 'Operation not permitted.' });
+    }
 
-      await connection('incidents').where('id', incident_id).delete();
+    await connection('incidents')
+      .where('id', incident_id)
+      .delete();
 
-      return res.status(204).send();
-  }
-}
+    return res.status(204).send();
+  },
+};
