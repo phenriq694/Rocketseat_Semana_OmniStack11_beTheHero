@@ -16,6 +16,18 @@ Aplicar as migrations:
 ```
 yarn knex migrate:latest
 ```
+
+## Entidades:
+- ONG;
+- Caso (Incident);
+
+## Funcionalidades:
+- Login de ONG;
+- Cadastro de ONG;
+- Cadastro de novos casos;
+- Deletar casos;
+- Listar casos da ONG;
+ 
 ## Rotas:
 Para criar um sessão na aplicação:
 ```
