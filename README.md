@@ -1,7 +1,12 @@
 # Rocketseat Semana OmniStack 11 - beTheHero
 Aplicação desenvolvida durante a 11ª Semana OmniStack produzida pela RocketSeat
 
-<h1>Be The Hero</h1>
+<h2>
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54601930/77840891-701e7780-7162-11ea-9bac-8d416659b220.png">
+  </p>
+</h2>
+
 <p>
   O objetivo dessa aplicação é dispobilizar um portal onde ONGs possam relatar problemas e pessoas possam ajudar com doações para auxiliar   as ONGs como por exemplo no tratamento de um animal resgatado por uma ONG desse setor. 
 </p>
