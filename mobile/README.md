@@ -20,7 +20,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/54601930/77840944-094d8e00-7163-11ea-8760-d3c4f59b05ea.gif">
+  <img src="https://user-images.githubusercontent.com/54601930/77840944-094d8e00-7163-11ea-8760-d3c4f59b05ea.gif"  width="400px">
 </p>
 
 ### Design das Páginas
