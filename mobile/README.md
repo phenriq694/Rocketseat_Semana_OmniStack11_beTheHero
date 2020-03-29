@@ -14,8 +14,14 @@
 </p>
 
 <h2>
-  Be The Hero
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54601930/77840891-701e7780-7162-11ea-9bac-8d416659b220.png">
+  </p>
 </h2>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/54601930/77840944-094d8e00-7163-11ea-8760-d3c4f59b05ea.gif">
+</p>
 
 ### Design das Páginas
 <p align="center">
