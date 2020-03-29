@@ -12,8 +12,15 @@
 </p>
 
 <h2>
-  Be The Hero
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54601930/77840891-701e7780-7162-11ea-9bac-8d416659b220.png">
+  </p>
 </h2>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/54601930/77840854-000ff180-7162-11ea-9396-65bcb3c7258b.gif">
+</p>
+
 
 ### Design das Páginas
 <p align="center">
@@ -32,9 +39,10 @@
 - Font Icons;
 - Father Icons;
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
