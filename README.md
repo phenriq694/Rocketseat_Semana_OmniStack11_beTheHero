@@ -8,7 +8,7 @@ Aplicação desenvolvida durante a 11ª Semana OmniStack produzida pela RocketSe
 </h2>
 
 <p>
-  O objetivo dessa aplicação é dispobilizar um portal onde ONGs possam relatar problemas e pessoas possam ajudar com doações para auxiliar   as ONGs como por exemplo no tratamento de um animal resgatado por uma ONG desse setor. 
+  O objetivo dessa aplicação é disponibilizar um portal onde ONGs possam relatar problemas e pessoas possam ajudar com doações para auxiliar   as ONGs como por exemplo no tratamento de um animal resgatado por uma ONG desse setor. 
 </p>
 <br />
 <p align="center">
